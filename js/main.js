@@ -38,8 +38,9 @@ function calculator(newvalue){
     
     }else {
         switch(lastoperator){
-            case "+" : 
-            case "=" : displayfigure += newvalue;
+            case "+" :  displayfigure += newvalue;
+            break;
+            case "=" : displayfigure = newvalue;
             break;
             case "-" : displayfigure -= newvalue;
             break;
